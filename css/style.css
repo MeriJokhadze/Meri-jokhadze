@@ -1,0 +1,180 @@
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+/* header styles */
+
+.header-wraper{
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-div ul {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    align-items: center;
+}
+
+.logo-div a{
+    color: #FA6980;
+    font-weight: bold;
+}
+
+.ul-li li:not(:last-child) a{
+    color: #343638;
+    opacity: 50%;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.ul-li li a:hover{
+    color: #343638;
+    opacity: 100%;
+    font-weight: bold;
+    
+}
+
+
+/* FIRST SECTION */
+
+.first-section-wraper{
+    width: 100%;
+    display: flex;
+}
+
+
+
+.main-img-wraper{
+    width: 55%;
+    background-image: url(./imgs/mainImgs/night.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 600px;
+}
+
+.banner-text-wraper{
+    width: 60% ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15% auto;
+    
+}
+.banner-text-wraper h2{
+    border-bottom: solid 2px white;
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.banner-text-wraper h3{
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.banner-text-wraper p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.pink-btn{
+    background-color:#FA6980 ;
+    border-radius: 6px;
+    padding: 16px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.pink-btn:hover{
+    opacity: 70%;
+}
+
+.more-news-wraper{
+   width: 45%;
+   padding: 100px;
+}
+
+
+/* SECOND SECTION  */
+.more-news-wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.fa-solid{
+    color: #707070;
+    cursor: pointer;
+   
+}
+
+.fa-solid:hover{
+    opacity: 30%;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.slider {
+    border-bottom: 2px solid #EBEDED ;
+    padding-bottom: 40px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article h3{
+    color: #FA6980;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article h4{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.article p{
+    color: #A6ADB4;
+    line-height: 26px;
+}
+
+.seen-status{
+    color: #A6ADB4;
+   font-size: 13px;
+}
+
+
