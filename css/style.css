@@ -1,4 +1,5 @@
 
+
 body{
     font-family: 'League Spartan', sans-serif;
 }
@@ -53,7 +54,7 @@ body{
     background-image: url(./imgs/mainImgs/night.jpg);
     background-size:cover;
     background-position: center;
-    height: 600px;
+    height: 640px;
 }
 
 .banner-text-wraper{
@@ -177,4 +178,193 @@ body{
    font-size: 13px;
 }
 
+/* third section */
+.sliders-section, .slider-section-second{
+    padding: 50px 140px;
+    background-color: #E4E4E4;
+}
 
+.slider-title-wr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.slider-title-wr h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.cities-wraper{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+.img-size{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.box-item{
+display: flex;
+flex-direction: column;
+gap: 15px;
+width: 30%;
+background-color: white;
+border-radius: 8px;
+padding-bottom: 2rem;
+
+}
+
+.box-item h3{
+    
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 40px ;
+
+}
+
+.box-item p {
+    color: #A6ADB4;
+    padding: 0 40px ;
+}
+
+/* eveants section */
+
+.evants-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.first-block{
+    width: 70%;
+}
+
+.box1{
+    width: 100%;
+    height: 530px;
+    background-image: url(../css/imgs/mainImgs/box1.jpg);
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.box1 .txt-div, .box3 .txt-div{
+    margin-top: 35%;
+    line-height: 20px;  
+    color: white;
+}
+.box1>h3, .box3>h3{
+
+    color: white;
+    line-height: 26px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.box3 {
+    width:100%;
+    height: 530px;
+    background-image: url(../css/imgs/mainImgs/svaneti.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 8px;
+}
+.boox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    
+}
+
+.boox>div{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+
+.boox div img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+ /* FOOOTER */
+ footer{
+    background-color: #A6ADB4;
+    padding: 54px 140px;
+    display: flex;
+    justify-content: space-between;
+ }
+footer div:last-child i{
+    color: white;
+    margin-left: 2rem;
+}
+
+.ft-logo{
+    color: white !important;
+    font-size: 20px;
+    line-height: 26px;
+}
+ .menu-items-wraper{
+    display: flex;
+    margin-left: 2rem;
+    font-weight: bold;
+ }
+
+ .menu-items a{
+    color: #CBD0D3;
+    font-size: 20px;
+ }
+
+ .menu-items{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    line-height: 26px;
+    color: #CBD0D3; 
+ }
+.subscrb-container {
+    position: relative;
+    display: inline-block;
+}
+ .subscrb-container input{
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 400px;
+    background-color: inherit;
+    border: solid 3px #CBD0D3;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+ }
+
+
+ .subscrb-container input::placeholder, .subscrb-container p{
+    color: #CBD0D3;
+    font-size: 1rem;
+ }
+
+ .fa-paper-plane{
+    position:absolute;
+    top: 23%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+    color: white;
+ }
