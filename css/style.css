@@ -3,7 +3,24 @@
 body{
     font-family: 'League Spartan', sans-serif;
 }
-/* header styles */
+
+.pink-btn{
+    background-color:#FA6980 ;
+    border-radius: 6px;
+    padding: 16px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.pink-btn:hover{
+    opacity: 70%;
+}
+
+/*  HEADER STYLES */
 
 .header-wraper{
     width: 100%;
@@ -47,8 +64,6 @@ body{
     display: flex;
 }
 
-
-
 .main-img-wraper{
     width: 55%;
     background-image: url(./imgs/mainImgs/night.jpg);
@@ -88,39 +103,24 @@ body{
     line-height: 26px;
 }
 
-.pink-btn{
-    background-color:#FA6980 ;
-    border-radius: 6px;
-    padding: 16px 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 11px;
-    text-align: center;
-    cursor: pointer;
-    
-}
-
-.pink-btn:hover{
-    opacity: 70%;
-}
-
 
 .more-news-wraper{
    width: 45%;
    padding: 100px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
 }
 
 
-/* SECOND SECTION  */
-.more-news-wraper{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+/* SECOND SECTION city slider */
+
 .slider{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid #EBEDED ;
+    padding-bottom: 40px;
 }
 
 .slider h2{
@@ -131,7 +131,6 @@ body{
 .fa-solid{
     color: #707070;
     cursor: pointer;
-   
 }
 
 .fa-solid:hover{
@@ -142,11 +141,6 @@ body{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-}
-
-.slider {
-    border-bottom: 2px solid #EBEDED ;
-    padding-bottom: 40px;
 }
 
 .article {
@@ -176,10 +170,10 @@ body{
 
 .seen-status{
     color: #A6ADB4;
-   font-size: 13px;
+    font-size: 13px;
 }
 
-/* third section */
+
 .sliders-section, .slider-section-second{
     padding: 50px 140px;
     background-color: #E4E4E4;
@@ -235,38 +229,64 @@ padding-bottom: 2rem;
     padding: 0 40px ;
 }
 
-/* eveants section */
+/* THIRD SECTION  BEST HIKING LOCATIONS */
 
-.evants-wraper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: middle;
+#hikingSlider{
     width: 100%;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    
 }
 
 .first-block{
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
 .box1{
     width: 100%;
-    height: 530px;
+    height: 430px;
     background-image: url(../css/imgs/mainImgs/box1.jpg);
     background-position: top;
     background-size: cover;
     margin-bottom: 40px;
     padding: 40px;
     border-radius: 8px;
+    
+}
+
+.box3 {
+    width:100%;
+    height: 430px;
+    background-image: url(../css/imgs/mainImgs/svaneti.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 8px;
 }
 
 .box1 .txt-div, .box3 .txt-div{
-    margin-top: 35%;
-    line-height: 20px;  
+    margin-top: 220px;
+    line-height: 26px;  
     color: white;
+    font-size: 16px;
+    
+    
+}
+
+
+.box1 .txt-div h4, .box3 .txt-div h4{
+    margin-top: 150px;
+    line-height: 34px;  
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+    
 }
 .box1>h3, .box3>h3{
-
     color: white;
     line-height: 26px;
     font-size: 36px;
@@ -274,37 +294,32 @@ padding-bottom: 2rem;
 }
 
 
-.box3 {
-    width:100%;
-    height: 530px;
-    background-image: url(../css/imgs/mainImgs/svaneti.jpg);
-    background-position: top;
-    background-size: cover;
-    padding: 40px;
-    border-radius: 8px;
-}
-.boox {
+.second-block {
+    width: 35% ;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
-    width: 25%;
-    
+   
 }
 
-.boox>div{
+.second-block>div{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
 }
 
 
-.boox div img{
+.second-block div img{
     width: 100%;
     border-radius: 8px;
+    height: 220px;
 }
 
 
- /* FOOOTER */
+ /* FOOOTER STYLES */
  footer{
     background-color: #A6ADB4;
     padding: 54px 140px;
@@ -313,7 +328,7 @@ padding-bottom: 2rem;
  }
 footer div:last-child i{
     color: white;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .ft-logo{
@@ -348,13 +363,12 @@ footer div:last-child i{
     border: none;
     outline: none;
     padding: 12px;
-    width: 400px;
+    width: 300px;
     background-color: inherit;
     border: solid 3px #CBD0D3;
     border-radius: 6px;
     margin-bottom: 1rem;
  }
-
 
  .subscrb-container input::placeholder, .subscrb-container p{
     color: #CBD0D3;
@@ -370,7 +384,7 @@ footer div:last-child i{
     color: white;
  }
 
- /* pop up  */
+ /* POP UP */
 
  .pop-up-wraper{
     width: 500px;
@@ -386,7 +400,6 @@ footer div:last-child i{
     border-radius: 6px;
     display: none;
  }
-
 
 
  .pop-up-wraper.popAct {
@@ -410,7 +423,7 @@ footer div:last-child i{
 }
 
 
-/* DISCOVERY PAGE */
+/* DISCOVERY NEW PAGE */
 
 .discovery-body {
     background-color: #F6F8F9;
@@ -494,7 +507,7 @@ footer div:last-child i{
    
 }
 
-/* kvanchkara */
+/* kvanchkara ARTICLE */
 
 .text-container {
     column-count: 3;
@@ -543,10 +556,9 @@ footer div:last-child i{
  }
 
 
- /* API PAGE STYLES */
+ /* API NEW PAGE STYLES */
 
  .api-elements-wraper{
-    height:100%;
     margin: 50px 50px ; 
     display: flex;
     flex-direction: row;
@@ -588,4 +600,95 @@ footer div:last-child i{
 
 #load-more-btn:disabled{
     opacity: 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:1024px){
+    .pop-up-wraper{
+        display: none;
+    }
+
+    .first-section-wraper{
+        flex-direction: column;
+    }
+
+    .main-img-wraper{
+        width: 100%;
+    }
+
+    .more-news-wraper{
+        width: 100%;
+    }
+    .more-news-wraper .more-news-articles{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .slider{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid #EBEDED ;
+        padding-bottom: 40px;
+    }
+
+    .evants-wraper{
+        flex-direction: column;
+    }
+
+    
+   .first-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .second-block {
+        width: 100% ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        
+    }
+
+    .second-block .box2{
+        display: none;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 50px;
+
+    }
+
+
+    /* api media */
+
+    
+ .api-elements-wraper{
+    
+    margin: 50px 50px ; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+ }
+
+ .element-wraper{
+    width: 30%;
+    background-color: pink;
+    border-radius: 8px;
+    padding: 10px;
+ }
+
+  
+
 }
