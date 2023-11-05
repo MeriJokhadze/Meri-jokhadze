@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unilab project</title>
+    <title> GEORGIA</title>
+    <link rel="shortcut icon" href="./css/imgs/icons/georgia.png" type="image/x-icon">
+
 
     <!-- css links -->
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +22,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="pop-up-wraper">
+        
+            <div class="close">
+                <i class="fa-solid fa-xmark" style="color: palegoldenrod; font-size: x-large; "></i>
+            </div>
+        </div>
+    </div>
     <header class="header-wraper">
         <div>
             <div class="logo-div">
@@ -28,18 +37,20 @@
         </div>
         <div class="nav-div">
             <ul class="ul-li">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">DISCOVERY</a></li>
-                <li><a href="#">PHOTOS</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="./pages/discovery.html">DISCOVERY</a></li>
+                <li><a href="./pages/api.html">PHOTOS</a></li>
                 <li><a href="#">CONTACT</a></li>
                 <li>
-                    <a href="#"><img src="css/imgs/icons/icon.png" alt="iconIMG"></a>
+                    <img src="css/imgs/icons/icon.png" class="pop-up-icon" alt="iconIMG">
                 </li>
             </ul>
         </div>
+       
         
     </header>
     <main>
+         
         <section class="first-section-wraper">
             <div class="main-img-wraper">
                 <div class="banner-text-wraper">
@@ -203,6 +214,7 @@
             <i class="fa-solid fa-earth-americas"></i>
         </div>
     </footer>
-    <script src="index.js" ></script>
+   
+    <script src="index.js" > </script>
 </body>
 </html>
