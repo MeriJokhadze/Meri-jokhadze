@@ -33,7 +33,6 @@ backBtn.addEventListener('click', ()=>{
     }
 });
 }
-firstSlider();
 
 // city slider with special data
 function citySlider(){
@@ -97,9 +96,8 @@ georgianCities.forEach((data)=>{
 });
 
 }
-citySlider();
 
-// POP Up
+// // POP Up
 function popUpFunction(){
   
 let popUp = document.querySelector('.pop-up-icon');
@@ -116,6 +114,107 @@ close.addEventListener('click',()=>{
 }
 popUpFunction();
 
-// 
+// API PAGE 
 
-const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+function apiFunc(){
+  const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+
+fetch(apiUrl, {method:'GET'})
+.then(response=>{
+  if (!response.ok){
+    throw "error" + response.status;
+  }
+  return response.json();
+})
+.then(result =>{
+  console.log(result[0].userId);
+  const wraper = document.querySelector('.api-elements-wraper');
+  const fragment = document.createDocumentFragment();
+  const loadBtn = document.querySelector('#load-more-btn');
+  const previousBtn = document.querySelector('#previous-more-btn');
+
+  let counter = 1;
+
+  function renderItems(){
+    wraper.innerHTML = ''; 
+    let filteredResult = result.filter(element => element.userId === counter);
+
+    filteredResult.forEach((element)=>{
+     
+     let elementDiv = document.createElement('div');
+     elementDiv.classList.add('element-wraper');
+ 
+     let number = document.createElement('div');
+     number.classList.add('number-wraper');
+     number.textContent = element.id;
+ 
+     let title = document.createElement('h2');
+     title.textContent = element.title;
+ 
+     let text = document.createElement('p');
+     text.textContent = element.body;
+ 
+ 
+     elementDiv.appendChild(number);
+     elementDiv.appendChild(title);
+     elementDiv.appendChild(text);
+     fragment.appendChild(elementDiv);
+     console.log(elementDiv);
+   })
+ 
+   
+   wraper.appendChild(fragment);
+
+   if (counter === 1) {
+    previousBtn.disabled = true;
+    
+  } else {
+    previousBtn.disabled = false;
+  }
+
+  if (counter === 10) {
+    loadBtn.disabled = true;
+  } else {
+    loadBtn.disabled = false;
+  }
+}
+  
+  renderItems();
+
+      loadBtn.addEventListener('click', ()=>{
+        counter++;
+        console.log(counter);
+        renderItems();
+      })
+ 
+    previousBtn.addEventListener('click',()=>{
+      counter--;
+      renderItems();
+      
+    })
+
+})
+.catch(error => {
+  console.error(error);
+});
+
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Call the function based on the current page
+
+  if (document.querySelector(".homePage")) {
+    firstSlider();
+    citySlider();
+    popUpFunction();
+  } else if (document.querySelector(".discoveryPage")) {
+    popUpFunction();
+  } else if (document.querySelector(".apiPage")) {
+    apiFunc();
+    popUpFunction();
+  }
+
+});
