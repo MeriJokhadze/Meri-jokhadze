@@ -49,31 +49,31 @@ let georgianCities = [
   {
     id: 2,
     title: 'Batumi',
-    image: '../css/imgs/mainImgs/batumi.jpg',
+    image: './css/imgs/mainImgs/batumi.jpg',
     description: 'Batumi, a seaside city on the Black Sea coast, is famous for its beaches, botanical garden, and modern architecture. It\'s a popular tourist destination with a subtropical climate.'
   },
   {
     id: 3,
     title: 'Kutaisi',
-    image: '../css/imgs/mainImgs/kutaisi.jpg',
+    image: './css/imgs/mainImgs/kutaisi.jpg',
     description: 'Kutaisi, Georgia\'s second-largest city, is known for its historical and architectural heritage. It\'s home to the Bagrati Cathedral and the Gelati Monastery, both UNESCO World Heritage Sites.'
   },
    {
     id:4,
     title: 'Gori',
-    image: '../css/imgs/mainImgs/gori.jpg',
+    image: './css/imgs/mainImgs/gori.jpg',
      description: 'Gori is the birthplace of Joseph Stalin and is known for its Stalin Museum. The city is also home to the ancient Uplistsikhe Cave Town and the Gori Fortress.'
    },
    {
     id: 5,
     title: 'Mtskheta',
-    image: '../css/imgs/mainImgs/mtskheta.jpg',
+    image: './css/imgs/mainImgs/mtskheta.jpg',
     description: 'Mtskheta, one of the oldest cities in Georgia, is a UNESCO World Heritage Site. It\'s known for its historical and religious significance, with attractions like the Svetitskhoveli Cathedral and Jvari Monastery.'
   },
    {
     id: 6,
      title: 'Zugdidi',
-    image:  '../css/imgs/mainImgs/zugdidi.jpg',
+    image:  './css/imgs/mainImgs/zugdidi.jpg',
     description: 'Zugdidi is a city in western Georgia, known for its lush landscapes and the Dadiani Palace, which houses a museum. The city is a gateway to the beautiful Samegrelo region.'
   }
 ]; 
