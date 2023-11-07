@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- META TAGS -->
+
+    <!--  for SEO -->
+    <meta name="keywords" content="Georgia travel, Georgia tourism, travel destinations, culture, history, attractions">
+    <meta name="description" content="Discover the beauty of Georgia with our comprehensive travel guide. Explore its stunning landscapes, rich culture, and historical attractions. Plan your next adventure with us.">
+    <meta name="author" content="[GEORGIA]">
+    <!-- social media -->
+    <meta property="og:title" content="Explore Georgia - Your Ultimate Travel Guide">
+    <meta property="og:description" content="Experience the best of Georgia's culture, nature, and history. Let us guide you through the hidden gems of this beautiful country.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title> GEORGIA</title>
     <link rel="shortcut icon" href="./css/imgs/icons/georgia.png" type="image/x-icon">
 
@@ -11,9 +28,6 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
-   
-
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +45,13 @@
                 <i class="fa-solid fa-xmark" style="color: palegoldenrod; font-size: x-large; "></i>
             </div>
         </div>
-    </div>
     <header class="header-wraper">
+        <div class="burger-bar" id="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+
+        </div>
         <div>
             <div class="logo-div">
                 <a href="index.html">LOGO</a>
@@ -49,11 +68,29 @@
                 </li>
             </ul>
         </div>
+
+        <div class="user-mobile-logo">
+            <img src="css/imgs/icons/icon.png" class="pop-up-icon" alt="iconIMG">
+        </div>
        
         
     </header>
     <main>
-         
+         <div class="side-bar">
+            <div class="burger-header">
+                <a href="index.html">LOGO</a>
+                <i class="fa-solid fa-xmark burger-close"></i>    
+             </div>
+             <div class="burger-ul-wraper">
+                <ul>
+                    <li><a href="index.html" class="burger-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+                    <li><a href="./pages/discovery.html"><i class="fa-solid fa-compass"></i>  DISCOVERY</a></li>
+                    <li><a href="./pages/api.html"><i class="fa-regular fa-image fa-solid"></i> PHOTOS</a></li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>  CONTACT</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>  PROFILE</a> </li>
+                </ul>
+             </div>
+            </div>
         <section class="first-section-wraper">
             <div class="main-img-wraper">
                 <div class="banner-text-wraper">
@@ -153,7 +190,7 @@
                <div class="second-block">
                 
                 <div class="box4">
-                    <img src="./css/imgs/mainImgs/box4.jpg" alt="">
+                    <img src="./css/imgs/mainImgs/box4.jpg" alt="img">
                     <h3>RACHA</h3>
                         <div class="seen-status">
                             <i class="fa-regular fa-clock"></i>
@@ -161,7 +198,7 @@
                         </div>
                 </div>
                 <div class="box5">
-                    <img src="./css/imgs/mainImgs/box5.jpg" alt="">
+                    <img src="./css/imgs/mainImgs/box5.jpg" alt="img">
                     <h3>SVANETI</h3>
     
                         <div class="seen-status">
@@ -171,7 +208,7 @@
                    
                 </div>
                 <div class="box2">
-                    <img src="./css/imgs/mainImgs/box2.jpg" alt="s">
+                    <img src="./css/imgs/mainImgs/box2.jpg" alt="imgmain">
                     <h3>SAMEGRELO</h3>
                         <div class="seen-status">
                             <i class="fa-regular fa-clock"></i>
@@ -188,7 +225,7 @@
         <div><a href="#" class="ft-logo">LOGO</a></div>
         <div class="menu-items-wraper">
             
-            <div class="menu-items">
+            <div class="menu-items mobile-not">
                 <a href="#">home</a>
                 <a href="#">discovery</a>
                 <a href="#">photos</a>
