@@ -213,6 +213,7 @@ background-color: white;
 border-radius: 8px;
 padding-bottom: 2rem;
 
+
 }
 
 .box-item h3{
@@ -228,6 +229,18 @@ padding-bottom: 2rem;
     color: #A6ADB4;
     padding: 0 40px ;
 }
+
+.box-item {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .box-item.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 
 /* THIRD SECTION  BEST HIKING LOCATIONS */
 
@@ -667,6 +680,15 @@ footer div:last-child i{
         gap: 50px;
 
     }
+    /* city slider */
+.box-item { 
+    width: 46%;
+}
+
+.img-size{
+    width: 100%;
+    height: 180px;
+}
 
 
     /* api media */
@@ -689,6 +711,6 @@ footer div:last-child i{
     padding: 10px;
  }
 
-  
+  /*  */
 
 }
