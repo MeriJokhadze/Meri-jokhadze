@@ -43,7 +43,7 @@ let georgianCities = [
   {
     id: 1,
     title: 'Tbilisi',
-    image: '../css/imgs/mainImgs/tbilisi.jpg',
+    image: './css/imgs/mainImgs/tbilisi.jpg',
     description: 'Tbilisi, the capital of Georgia, is known for its diverse architecture, historic churches, and vibrant arts scene. It sits on the banks of the Kura River and offers a mix of modern and historic attractions.'
   },
   {
