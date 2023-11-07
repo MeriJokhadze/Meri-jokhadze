@@ -73,7 +73,7 @@ let georgianCities = [
    {
     id: 6,
      title: 'Zugdidi',
-    image:  '../css/imgs/mainImgs/samegrelo.jpg',
+    image:  '../css/imgs/mainImgs/zugdidi.jpg',
     description: 'Zugdidi is a city in western Georgia, known for its lush landscapes and the Dadiani Palace, which houses a museum. The city is a gateway to the beautiful Samegrelo region.'
   }
 ]; 
